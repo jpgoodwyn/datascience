@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Art Portfolio | Jill P. Shepard</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+          rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* Art portfolio-specific styles */
+        .art-nav {
+            text-align: center;
+            padding: 18px 15px;
+            background: #fff;
+            border-bottom: 1px solid #dcd9d9;
+        }
+
+        .art-nav a {
+            display: inline-block;
+            padding: 10px 14px;
+            color: #3498db;
+        }
+
+        .art-hero {
+            padding: 75px 15px;
+            text-align: center;
+            background: #3498db;
+            color: #fff;
+        }
+
+        .art-hero h1 {
+            font-size: 3.2em;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .art-hero p {
+            font-size: 1.15em;
+            color: #fff;
+        }
+
+        .art-section {
+            padding: 50px 15px;
+            border-bottom: 1px solid #dcd9d9;
+        }
+
+        .art-section h2 {
+            color: #374054;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .art-description {
+            max-width: 700px;
+            margin: 0 auto 35px;
+            text-align: center;
+            color: #74808a;
+        }
+
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .art-card {
+            background: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .art-card img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            background: #f2f2f5;
+            transition: transform 0.25s ease;
+        }
+
+        .art-card a:hover img {
+            transform: scale(1.02);
+        }
+
+        .art-card-info {
+            padding: 15px;
+        }
+
+        .art-card h3 {
+            margin: 0 0 8px;
+            color: #374054;
+            font-size: 1.25em;
+            font-weight: 400;
+        }
+
+        .art-card p {
+            color: #74808a;
+            margin: 0;
+            font-size: 0.95em;
+        }
+
+        .art-footer {
+            padding: 30px 15px;
+            text-align: center;
+            color: #74808a;
+        }
+
+        .art-footer a {
+            color: #3498db;
+        }
+
+        @media (max-width: 767px) {
+            .art-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 15px;
+            }
+
+            .art-card img {
+                height: 220px;
+            }
+
+            .art-hero h1 {
+                font-size: 2.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .art-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .art-card img {
+                height: auto;
+                max-height: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="art-nav" aria-label="Portfolio navigation">
+        <a href="index.html">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Main Portfolio
+        </a>
+        <a href="#inktober">Inktober</a>
+        <a href="#childrens-book">Children's Books</a>
+        <a href="#personal-work">Personal Work</a>
+    </nav>
+
+    <header class="art-hero">
+        <h1>Art & Illustration</h1>
+        <p>A collection of sketches, stories, and things I've made.</p>
+    </header>
+
+    <main>
+
+        <!-- INKTOBER -->
+        <section id="inktober" class="art-section background-alt">
+            <div class="container">
+                <h2 class="heading">Inktober 2026 Sketches</h2>
+                <p class="art-description">
+                    A month of ink, imagination, and daily drawing.
+                    A collection of sketches from Inktober 2026.
+                </p>
+
+                <div class="art-grid">
+
+                    <article class="art-card shadow-large">
+                        <a href="images/inktober/day-01.jpg"
+                           target="_blank"
+                           aria-label="View Inktober Day 1 artwork">
+                            <img src="images/inktober/day-01.jpg"
+                                 alt="Inktober Day 1 sketch"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Day 1 — [Prompt]</h3>
+                            <p>A little note about this drawing.</p>
+                        </div>
+                    </article>
+
+                    <article class="art-card shadow-large">
+                        <a href="images/inktober/day-02.jpg"
+                           target="_blank"
+                           aria-label="View Inktober Day 2 artwork">
+                            <img src="images/inktober/day-02.jpg"
+                                 alt="Inktober Day 2 sketch"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Day 2 — [Prompt]</h3>
+                            <p>A little note about this drawing.</p>
+                        </div>
+                    </article>
+
+                    <article class="art-card shadow-large">
+                        <a href="images/inktober/day-03.jpg"
+                           target="_blank"
+                           aria-label="View Inktober Day 3 artwork">
+                            <img src="images/inktober/day-03.jpg"
+                                 alt="Inktober Day 3 sketch"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Day 3 — [Prompt]</h3>
+                            <p>A little note about this drawing.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CHILDREN'S BOOK ILLUSTRATION -->
+        <section id="childrens-book" class="art-section">
+            <div class="container">
+                <h2 class="heading">Children's Book Illustration</h2>
+                <p class="art-description">
+                    Character designs, storybook scenes, and illustrations
+                    made for young readers.
+                </p>
+
+                <div class="art-grid">
+
+                    <article class="art-card shadow-large">
+                        <a href="images/childrens-book/character-study.jpg"
+                           target="_blank">
+                            <img
+                                src="images/childrens-book/character-study.jpg"
+                                alt="Children's book character study"
+                                loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Character Studies</h3>
+                            <p>Exploring characters and their personalities.</p>
+                        </div>
+                    </article>
+
+                    <article class="art-card shadow-large">
+                        <a href="images/childrens-book/finished-illustration.jpg"
+                           target="_blank">
+                            <img
+                                src="images/childrens-book/finished-illustration.jpg"
+                                alt="Finished children's book illustration"
+                                loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Story Illustrations</h3>
+                            <p>Finished artwork and scenes from stories.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAL WORK -->
+        <section id="personal-work" class="art-section background-alt">
+            <div class="container">
+                <h2 class="heading">Personal Work & Sketchbooks</h2>
+                <p class="art-description">
+                    Doodles, creatures, experiments, and whatever else
+                    happens to escape from my sketchbook.
+                </p>
+
+                <div class="art-grid">
+
+                    <article class="art-card shadow-large">
+                        <a href="images/personal-art/creature-sketch.jpg"
+                           target="_blank">
+                            <img
+                                src="images/personal-art/creature-sketch.jpg"
+                                alt="Fantasy creature sketch"
+                                loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Creature Sketches</h3>
+                            <p>Strange little beings and other experiments.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="art-footer">
+        <p>
+            <a href="index.html">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Back to Jill's Main Portfolio
+            </a>
+        </p>
+        <p>&copy; 2026 Jill P. Shepard</p>
+    </footer>
+
+</body>
+</html>
