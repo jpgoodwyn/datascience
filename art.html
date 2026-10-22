@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Art Portfolio | Jill P. Shepard</title>
+    <title>Art & Illustration | Jill P. Shepard</title>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
@@ -16,34 +16,58 @@
 
     <style>
         /* Art portfolio-specific styles */
+        .art-header {
+            padding: 35px 15px 25px;
+            text-align: center;
+            background: #fff;
+            border-bottom: 1px solid #dcd9d9;
+        }
+
+        .art-header h1 {
+            margin: 0 0 8px;
+            color: #374054;
+            font-size: 2.8em;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+        }
+
+        .art-header p {
+            margin: 0;
+            color: #74808a;
+            font-size: 1.1em;
+        }
+
         .art-nav {
             text-align: center;
-            padding: 18px 15px;
+            padding: 14px 15px;
             background: #fff;
             border-bottom: 1px solid #dcd9d9;
         }
 
         .art-nav a {
             display: inline-block;
-            padding: 10px 14px;
+            padding: 8px 12px;
             color: #3498db;
         }
 
         .art-hero {
-            padding: 75px 15px;
+            padding: 55px 15px;
             text-align: center;
             background: #3498db;
             color: #fff;
         }
 
-        .art-hero h1 {
-            font-size: 3.2em;
+        .art-hero h2 {
+            margin: 0 0 12px;
+            color: #fff;
+            font-size: 2.5em;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 0.04em;
         }
 
         .art-hero p {
+            margin: 0;
             font-size: 1.15em;
             color: #fff;
         }
@@ -51,6 +75,7 @@
         .art-section {
             padding: 50px 15px;
             border-bottom: 1px solid #dcd9d9;
+            scroll-margin-top: 20px;
         }
 
         .art-section h2 {
@@ -76,6 +101,12 @@
             background: #fff;
             border-radius: 4px;
             overflow: hidden;
+        }
+
+        .art-card a {
+            display: block;
+            overflow: hidden;
+            background: #f2f2f5;
         }
 
         .art-card img {
@@ -128,8 +159,16 @@
                 height: 220px;
             }
 
-            .art-hero h1 {
+            .art-header h1 {
                 font-size: 2.2em;
+            }
+
+            .art-hero h2 {
+                font-size: 2em;
+            }
+
+            .art-nav a {
+                padding: 8px;
             }
         }
 
@@ -148,73 +187,86 @@
 
 <body>
 
+    <!-- NAME AT THE TOP -->
+    <header class="art-header">
+        <h1>Jill P. Shepard</h1>
+        <p>Illustration, imagination, and visual storytelling</p>
+    </header>
+
+    <!-- PORTFOLIO NAVIGATION -->
     <nav class="art-nav" aria-label="Portfolio navigation">
         <a href="index.html">
             <i class="fa fa-arrow-left" aria-hidden="true"></i>
-            Main Portfolio
+            Main Website
         </a>
-        <a href="#inktober">Inktober</a>
-        <a href="#childrens-book">Children's Books</a>
-        <a href="#personal-work">Personal Work</a>
+        <a href="#adult-novel">Adult Novel Illustration</a>
+        <a href="#picture-book">Picture Book Illustration</a>
+        <a href="#tattoo-design">Tattoo Design</a>
+        <a href="#finished-work">Selected Finished Work</a>
+        <a href="#doodles">Doodles & Sketchbook</a>
     </nav>
 
-    <header class="art-hero">
-        <h1>Art & Illustration</h1>
-        <p>A collection of sketches, stories, and things I've made.</p>
-    </header>
+    <!-- INTRODUCTION -->
+    <div class="art-hero">
+        <h2>Art & Illustration</h2>
+        <p>A collection of stories, creatures, characters, and things I've made.</p>
+    </div>
 
     <main>
 
-        <!-- INKTOBER -->
-        <section id="inktober" class="art-section background-alt">
+        <!-- ADULT NOVEL ILLUSTRATION -->
+        <section id="adult-novel" class="art-section background-alt">
             <div class="container">
-                <h2 class="heading">Inktober 2026 Sketches</h2>
+                <h2 class="heading">Adult Novel Illustration</h2>
                 <p class="art-description">
-                    A month of ink, imagination, and daily drawing.
-                    A collection of sketches from Inktober 2026.
+                    Fantasy creatures, chapter illustrations, intricate inkwork,
+                    and visual explorations of imagined worlds.
                 </p>
 
                 <div class="art-grid">
 
                     <article class="art-card shadow-large">
-                        <a href="images/inktober/day-01.jpg"
+                        <a href="images/adult-novel/creature-illustration.jpg"
                            target="_blank"
-                           aria-label="View Inktober Day 1 artwork">
-                            <img src="images/inktober/day-01.jpg"
-                                 alt="Inktober Day 1 sketch"
+                           rel="noopener noreferrer"
+                           aria-label="View creature illustration">
+                            <img src="images/adult-novel/creature-illustration.jpg"
+                                 alt="Fantasy creature illustration"
                                  loading="lazy">
                         </a>
                         <div class="art-card-info">
-                            <h3>Day 1 — [Prompt]</h3>
-                            <p>A little note about this drawing.</p>
+                            <h3>Creature Illustration</h3>
+                            <p>Fantasy creatures and unusual beings.</p>
                         </div>
                     </article>
 
                     <article class="art-card shadow-large">
-                        <a href="images/inktober/day-02.jpg"
+                        <a href="images/adult-novel/chapter-art.jpg"
                            target="_blank"
-                           aria-label="View Inktober Day 2 artwork">
-                            <img src="images/inktober/day-02.jpg"
-                                 alt="Inktober Day 2 sketch"
+                           rel="noopener noreferrer"
+                           aria-label="View chapter illustration">
+                            <img src="images/adult-novel/chapter-art.jpg"
+                                 alt="Decorative chapter illustration"
                                  loading="lazy">
                         </a>
                         <div class="art-card-info">
-                            <h3>Day 2 — [Prompt]</h3>
-                            <p>A little note about this drawing.</p>
+                            <h3>Chapter Art</h3>
+                            <p>Small illustrations and decorative details for stories.</p>
                         </div>
                     </article>
 
                     <article class="art-card shadow-large">
-                        <a href="images/inktober/day-03.jpg"
+                        <a href="images/adult-novel/fantasy-ink.jpg"
                            target="_blank"
-                           aria-label="View Inktober Day 3 artwork">
-                            <img src="images/inktober/day-03.jpg"
-                                 alt="Inktober Day 3 sketch"
+                           rel="noopener noreferrer"
+                           aria-label="View fantasy ink illustration">
+                            <img src="images/adult-novel/fantasy-ink.jpg"
+                                 alt="Detailed black ink fantasy artwork"
                                  loading="lazy">
                         </a>
                         <div class="art-card-info">
-                            <h3>Day 3 — [Prompt]</h3>
-                            <p>A little note about this drawing.</p>
+                            <h3>Fantasy Inkwork</h3>
+                            <p>Intricate lines, patterns, and imagined worlds.</p>
                         </div>
                     </article>
 
@@ -222,42 +274,44 @@
             </div>
         </section>
 
-        <!-- CHILDREN'S BOOK ILLUSTRATION -->
-        <section id="childrens-book" class="art-section">
+        <!-- PICTURE BOOK ILLUSTRATION -->
+        <section id="picture-book" class="art-section">
             <div class="container">
-                <h2 class="heading">Children's Book Illustration</h2>
+                <h2 class="heading">Picture Book Illustration</h2>
                 <p class="art-description">
-                    Character designs, storybook scenes, and illustrations
-                    made for young readers.
+                    Expressive characters, whimsical animals, and story-driven
+                    illustrations for young readers.
                 </p>
 
                 <div class="art-grid">
 
                     <article class="art-card shadow-large">
-                        <a href="images/childrens-book/character-study.jpg"
-                           target="_blank">
-                            <img
-                                src="images/childrens-book/character-study.jpg"
-                                alt="Children's book character study"
-                                loading="lazy">
+                        <a href="images/picture-book/character-studies.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View picture book character studies">
+                            <img src="images/picture-book/character-studies.jpg"
+                                 alt="Character studies for picture book illustration"
+                                 loading="lazy">
                         </a>
                         <div class="art-card-info">
                             <h3>Character Studies</h3>
-                            <p>Exploring characters and their personalities.</p>
+                            <p>Exploring character, personality, and expression.</p>
                         </div>
                     </article>
 
                     <article class="art-card shadow-large">
-                        <a href="images/childrens-book/finished-illustration.jpg"
-                           target="_blank">
-                            <img
-                                src="images/childrens-book/finished-illustration.jpg"
-                                alt="Finished children's book illustration"
-                                loading="lazy">
+                        <a href="images/picture-book/story-illustration.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View picture book story illustration">
+                            <img src="images/picture-book/story-illustration.jpg"
+                                 alt="Colorful picture book story illustration"
+                                 loading="lazy">
                         </a>
                         <div class="art-card-info">
                             <h3>Story Illustrations</h3>
-                            <p>Finished artwork and scenes from stories.</p>
+                            <p>Scenes and moments from imagined stories.</p>
                         </div>
                     </article>
 
@@ -265,28 +319,149 @@
             </div>
         </section>
 
-        <!-- PERSONAL WORK -->
-        <section id="personal-work" class="art-section background-alt">
+        <!-- TATTOO DESIGN -->
+        <section id="tattoo-design" class="art-section background-alt">
             <div class="container">
-                <h2 class="heading">Personal Work & Sketchbooks</h2>
+                <h2 class="heading">Tattoo Design</h2>
                 <p class="art-description">
-                    Doodles, creatures, experiments, and whatever else
-                    happens to escape from my sketchbook.
+                    Illustrative designs, intricate linework, and imagery inspired
+                    by animals, fantasy, and the natural world.
                 </p>
 
                 <div class="art-grid">
 
                     <article class="art-card shadow-large">
-                        <a href="images/personal-art/creature-sketch.jpg"
-                           target="_blank">
-                            <img
-                                src="images/personal-art/creature-sketch.jpg"
-                                alt="Fantasy creature sketch"
-                                loading="lazy">
+                        <a href="images/tattoo-design/animal-design.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View animal tattoo design">
+                            <img src="images/tattoo-design/animal-design.jpg"
+                                 alt="Animal-inspired tattoo design"
+                                 loading="lazy">
                         </a>
                         <div class="art-card-info">
-                            <h3>Creature Sketches</h3>
-                            <p>Strange little beings and other experiments.</p>
+                            <h3>Animal Designs</h3>
+                            <p>Illustrative designs inspired by the natural world.</p>
+                        </div>
+                    </article>
+
+                    <article class="art-card shadow-large">
+                        <a href="images/tattoo-design/ornamental-design.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View ornamental tattoo design">
+                            <img src="images/tattoo-design/ornamental-design.jpg"
+                                 alt="Ornamental black ink design"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Ornamental Work</h3>
+                            <p>Decorative patterns and detailed linework.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SELECTED FINISHED WORK -->
+        <section id="finished-work" class="art-section">
+            <div class="container">
+                <h2 class="heading">Selected Finished Work</h2>
+                <p class="art-description">
+                    A selection of completed pieces, portraits, and other artwork
+                    that doesn't fit neatly into one category.
+                </p>
+
+                <div class="art-grid">
+
+                    <article class="art-card shadow-large">
+                        <a href="images/finished-work/portrait.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View finished portrait">
+                            <img src="images/finished-work/portrait.jpg"
+                                 alt="Finished portrait artwork"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Portraits</h3>
+                            <p>Finished portrait work.</p>
+                        </div>
+                    </article>
+
+                    <article class="art-card shadow-large">
+                        <a href="images/finished-work/featured-piece.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View selected finished artwork">
+                            <img src="images/finished-work/featured-piece.jpg"
+                                 alt="Selected finished artwork"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Selected Work</h3>
+                            <p>A few favorite finished pieces.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DOODLES & SKETCHBOOK -->
+        <section id="doodles" class="art-section background-alt">
+            <div class="container">
+                <h2 class="heading">Doodles & Sketchbook</h2>
+                <p class="art-description">
+                    Inktober, sketchbook experiments, creatures, silly ideas,
+                    and whatever else escapes from my imagination.
+                </p>
+
+                <div class="art-grid">
+
+                    <article class="art-card shadow-large">
+                        <a href="images/doodles/inktober-day-01.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View Inktober sketch">
+                            <img src="images/doodles/inktober-day-01.jpg"
+                                 alt="Inktober ink sketch"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Inktober</h3>
+                            <p>A collection of daily ink drawings.</p>
+                        </div>
+                    </article>
+
+                    <article class="art-card shadow-large">
+                        <a href="images/doodles/creature-sketch.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View creature doodle">
+                            <img src="images/doodles/creature-sketch.jpg"
+                                 alt="Whimsical creature sketch"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Creature Doodles</h3>
+                            <p>Strange little beings and sketchbook experiments.</p>
+                        </div>
+                    </article>
+
+                    <article class="art-card shadow-large">
+                        <a href="images/doodles/misc-sketch.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View miscellaneous sketch">
+                            <img src="images/doodles/misc-sketch.jpg"
+                                 alt="Miscellaneous sketchbook drawing"
+                                 loading="lazy">
+                        </a>
+                        <div class="art-card-info">
+                            <h3>Odds & Ends</h3>
+                            <p>Little ideas, experiments, and works in progress.</p>
                         </div>
                     </article>
 
@@ -300,7 +475,7 @@
         <p>
             <a href="index.html">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                Back to Jill's Main Portfolio
+                Back to Jill's Main Website
             </a>
         </p>
         <p>&copy; 2026 Jill P. Shepard</p>
